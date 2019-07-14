@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<title> Jay Bhadreshwara </title>
+</head>
+
+	<body>
+                
+        
+        <!-- Navbar links -->
+        
+        <nav class="navbar navbar-expand-sm bg-light justify-content-center navbar-light fixed-top" style="background: #ffffff !important; border-bottom: 2px solid white; font-weight: bold; color: black;">
+            <!-- Toggler/collapsibe Button -->
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse justify-content-center navbar-collapse" id="collapseNavbar" style=" font-size: 18px;">
+            <ul class="navbar-nav" style="font-size: 18px;">
+                <li class="nav-item" style="padding-left: 18px;">
+                    <a class="nav-link text-black" href="index.html">Home</a>
+                </li>
+                <li class="nav-item" style="padding-left: 18px;">
+                    <a class="nav-link text-black" href="work.html">Work</a>
+                </li>
+                <li class="nav-item" style="padding-left: 18px;">
+                    <a class="nav-link text-black" href="about.html">About</a>
+                </li>
+                <li class="nav-item" style="padding-left: 18px;">
+                    <a class="nav-link text-black" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <br><br>
+        
+        <script>
+            var nameValue = document.getElementById("name").value;
+            var emailValue = document.getElementById("email").value;
+            var noteValue = document.getElementById("note").value;
+                function myFunction() {
+                    document.getElementById("myForm").submit();
+                }
+        </script>
+        
+        <section id="contact">
+            <div class="container fluid">
+               <form class="col-md-12" id="myform">
+                   <div class="form-group">
+                       <input type="text" placeholder="Name" class="form-control col-md-10 col-sm-6" id="name">
+                    </div>
+
+                   
+                   <div class="form-group">
+                      <input type="email"  placeholder="john@example.com" class="form-control col-md-10 col-sm-6" id="email" style="background: transparent; color:white;">
+                      </div><br>
+                   
+                    <div class="form-group">
+                            <textarea class="col-md-10 col-sm-6" id="note"  rows="5" placeholder="Leave a Note..." style="font-size: 30px;" ></textarea><br>
+                    </div>
+                   
+                    <div class="form-group" style="margin-bottom: 50px;">
+                        <button class="btn btn-info" onclick="myFunction()" style="font-size:20px;padding-left: 10px;">Post</button>
+                    </div>
+               </form> 
+                             
+            </div>
+        </section>
+        <hr>
+        <div class="footer text-center" style="position: fixed; background-color: white;">
+            <span class="footer1">
+                <a href="https://twitter.com/iamBhadreshwara"><i class="icon fab fa-twitter" aria-hidden="true" style="font-size: 24px; margin: 8px;"></i></a>          
+            
+            </span>
+            <span class="footer1">
+                <a href="https://github.com/Bhadreshwara"><i class="icon fab fa-github" aria-hidden="true" style="font-size: 24px; margin: 8px"></i></a>      
+           
+            </span>
+            <span class="footer1">
+             <a href="https://codepen.io/iambhadreshwara/"><i class="icon fab fa-codepen" aria-hidden="true" style="font-size: 24px; margin: 8px"></i></a>
+            </span>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB3ODOB19zK2NAqr5Fq8LQJaHVKg3PsJBw",
+    authDomain: "portfolio-43eeb.firebaseapp.com",
+    databaseURL: "https://portfolio-43eeb.firebaseio.com",
+    projectId: "portfolio-43eeb",
+    storageBucket: "portfolio-43eeb.appspot.com",
+    messagingSenderId: "605263005882"
+  };
+  firebase.initializeApp(config);
+</script>
+        
+        
+        </body>
+        </html>
